@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a2144"/>
+      <stop offset="0.48" stop-color="#07172f"/>
+      <stop offset="1" stop-color="#020711"/>
+    </linearGradient>
+    <radialGradient id="aurora" cx="0.5" cy="0.48" r="0.62">
+      <stop offset="0" stop-color="#1fa7ff" stop-opacity="0.52"/>
+      <stop offset="0.45" stop-color="#0d4fb8" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#020711" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="waveMain" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7ff7ff"/>
+      <stop offset="0.42" stop-color="#48a9ff"/>
+      <stop offset="0.72" stop-color="#8b72ff"/>
+      <stop offset="1" stop-color="#ff7ad9"/>
+    </linearGradient>
+    <linearGradient id="waveEcho1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#35d6ff" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#625dff" stop-opacity="0.15"/>
+    </linearGradient>
+    <linearGradient id="waveEcho2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff65c8" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#ffd36a" stop-opacity="0.7"/>
+    </linearGradient>
+    <linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.34"/>
+      <stop offset="0.55" stop-color="#ffffff" stop-opacity="0.06"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="30"/>
+    </filter>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="24"/>
+    </filter>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="7"/>
+    </filter>
+    <clipPath id="squircle">
+      <rect x="72" y="72" width="880" height="880" rx="202"/>
+    </clipPath>
+  </defs>
+
+  <rect x="92" y="112" width="840" height="840" rx="196" fill="#000000" opacity="0.55" filter="url(#shadow)"/>
+
+  <g clip-path="url(#squircle)">
+    <rect x="72" y="72" width="880" height="880" fill="url(#bg)"/>
+    <rect x="72" y="72" width="880" height="880" fill="url(#aurora)"/>
+
+    <g fill="#ffffff" opacity="0.12">
+      <circle cx="190" cy="230" r="2.4"/>
+      <circle cx="278" cy="318" r="1.6"/>
+      <circle cx="824" cy="244" r="2.1"/>
+      <circle cx="742" cy="196" r="1.4"/>
+      <circle cx="872" cy="372" r="1.7"/>
+      <circle cx="164" cy="792" r="1.8"/>
+      <circle cx="842" cy="806" r="2.2"/>
+      <circle cx="318" cy="856" r="1.4"/>
+    </g>
+
+    <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M88 626 C 254 384, 426 384, 512 622 C 598 860, 770 860, 936 618"
+            stroke="#2fe1ff" stroke-width="116" opacity="0.34" filter="url(#glow)"/>
+      <path d="M88 626 C 254 384, 426 384, 512 622 C 598 860, 770 860, 936 618"
+            stroke="#8b72ff" stroke-width="54" opacity="0.38" filter="url(#glow)"/>
+      <path d="M88 556 C 254 314, 426 314, 512 552 C 598 790, 770 790, 936 548"
+            stroke="url(#waveEcho1)" stroke-width="15" opacity="0.86"/>
+      <path d="M88 696 C 254 454, 426 454, 512 692 C 598 930, 770 930, 936 688"
+            stroke="url(#waveEcho2)" stroke-width="12" opacity="0.72"/>
+      <path d="M88 626 C 254 384, 426 384, 512 622 C 598 860, 770 860, 936 618"
+            stroke="url(#waveMain)" stroke-width="38"/>
+      <path d="M116 610 C 270 394, 420 402, 500 614"
+            stroke="#ffffff" stroke-width="7" opacity="0.48" filter="url(#softGlow)"/>
+    </g>
+
+    <g fill="#c9fbff">
+      <circle cx="212" cy="474" r="5" opacity="0.82" filter="url(#softGlow)"/>
+      <circle cx="330" cy="410" r="3.2" opacity="0.7" filter="url(#softGlow)"/>
+      <circle cx="474" cy="520" r="4.2" opacity="0.78" filter="url(#softGlow)"/>
+      <circle cx="624" cy="726" r="4.8" opacity="0.8" filter="url(#softGlow)"/>
+      <circle cx="772" cy="694" r="3.2" opacity="0.7" filter="url(#softGlow)"/>
+      <circle cx="874" cy="590" r="4.4" opacity="0.7" filter="url(#softGlow)"/>
+    </g>
+
+    <path d="M72 72 H952 V360 C 740 250, 284 250, 72 360 Z" fill="url(#gloss)"/>
+    <rect x="72" y="72" width="880" height="880" fill="none" stroke="#ffffff" stroke-opacity="0.16" stroke-width="3"/>
+  </g>
+</svg>
